@@ -189,9 +189,10 @@ body {
 }
 
 ul.header-nav {
-  width: 487px;
+  width: 456px;
   float: right;
-  margin-top: -18px; 
+  margin-top: -18px;
+  color: rgba(70, 68, 69, 1.0); 
 }
 
 .quotation {
