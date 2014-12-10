@@ -163,10 +163,10 @@ body {
 }
 
   .header-nav li a {
+  color: rgba(70, 68, 69, 1.0);
   text-decoration: none;
   list-style: none;
   letter-spacing: .2em;
-  font-weight: bold;
   font-family: 'Varela Round', sans-serif;
   display: inline;
   
