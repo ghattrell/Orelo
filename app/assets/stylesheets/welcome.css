@@ -1,0 +1,213 @@
+*{
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.clear{
+  clear:both;
+}
+
+.cheesy-phrase {
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+  top: 39px;
+  left: 63px;
+
+}
+
+.site-header {
+  position: relative;
+}
+
+.site-header .glyphicons {
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  width: 100%;
+}
+
+.grid-container .square {
+  position: relative;
+  float: left;
+  width: 175px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 0.5px;
+
+}
+
+.choose-a-language {
+  padding: 35px 0 15px; 
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.nav-container {
+  position: relative;
+  z-index: 10;
+  min-height: 0;
+  height: 50px; 
+}
+
+
+.flag, .outline {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.flag {
+  background-size: cover;
+  z-index: 0;
+}
+
+.outline {
+  background-size: auto 100%;
+  z-index: 10;
+  transition: 1s;
+}
+
+.square:nth-child(even) .outline {
+  background-color: white;
+}
+
+.square:nth-child(odd) .outline {
+  background-color: black;
+}
+
+.square:hover .outline{
+  opacity: 0;
+}
+
+.uk.flag {background-image: url('britain_flag.jpg');}
+.uk.outline {background-image: url('uk_outline.png');}
+.india.flag {background-image: url('india.jpeg');}
+.india.outline {background-image: url('India.png');}
+.france.flag {background-image: url('france_flag.jpg');}
+.france.outline {background-image: url('france_outline.png');}
+.germany.flag {background-image: url('german_flag.jpg');}
+.germany.outline {background-image: url('germany.png');}
+.portugal.flag {background-image: url('portugal_flag.jpg');}
+.portugal.outline {background-image: url('Portugal.png');}
+.russia.flag {background-image: url('russia_flag.jpeg');}
+.russia.outline {background-image: url('russia.png');}
+.spain.outline {background-image: url('spain.png');}
+.spain.flag {background-image: url('spain_flag.jpeg');}
+.china.outline {background-image: url('china.png');}
+.china.flag {background-image: url('chinese_flag.jpg');}
+.pakistan.outline {background-image: url('pakistan_outline.png');}
+.pakistan.flag {background-image: url('pakistan_flag.jpeg');}
+.indonesia.outline {background-image: url('indonesia_outline.png');}
+.indonesia.flag {background-image: url('indonesia_flag.jpg');}
+
+
+.quotation {
+  text-align: center;
+}
+
+.quotation h1 {
+  margin-top: 10px;
+  line-height: 40px;
+}
+
+.grid-container.nav-container img {
+  height: 50px;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo span {
+  position: absolute;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 3em;
+  font-weight: lighter;
+  top: 23px;
+}
+
+.logo img{
+  height: 75px;
+}
+
+.header-nav li {
+  list-style: none;
+  display: inline;
+  padding-left: 20px;
+  padding-bottom: 4px;
+  border-right: 0;
+  border-color: transparent;
+  width: auto;
+  float: none;
+}
+
+  .header-nav li a {
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: .2em;
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+  display: inline;
+  
+}
+
+.green-bar {
+  height: 90px;
+  background-color: rgba(116, 189, 178, 1.0);
+  color: white;
+  text-align:center;
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+  padding:1%;
+  font-spacing: .1em;
+}
+
+.green-bar span{
+  background-color: rgba(116, 189, 178, 1.0);
+  text-align: center;
+}
+
+ul.header-nav {
+  width: 487px;
+  float: right;
+  margin-top: -18px; 
+}
+
+.quotation {
+  position: absolute;
+  height: 100px;
+  background-color: rgba(70, 68, 69, 1.0);
+}
+
+.quotation p, .quotation h5{
+ /* postion: absolute;*/
+ /* z-index: 100;*/
+ /* color: white;*/
+}
+
+.glyphicons {
+  position: absolute;
+  float: right;
+  z-index: 20;
+}

@@ -7,6 +7,8 @@ gem 'rails', '3.2.19'
 
 gem 'pg'
 
+gem "font-awesome-rails"
+
 #http request to google
 gem 'httparty', '~> 0.13.3'
 #authentication
