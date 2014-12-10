@@ -1,6 +1,12 @@
 Project3::Application.routes.draw do
 
 
+  resources :desired_languages
+
+
+  resources :languages
+
+
   resources :messages
 
 

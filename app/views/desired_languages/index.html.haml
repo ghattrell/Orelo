@@ -1,0 +1,21 @@
+%h1 Listing desired_languages
+
+%table
+  %tr
+    %th User
+    %th Language
+    %th
+    %th
+    %th
+
+  - @desired_languages.each do |desired_language|
+    %tr
+      %td= desired_language.user_id
+      %td= desired_language.language_id
+      %td= link_to 'Show', desired_language
+      %td= link_to 'Edit', edit_desired_language_path(desired_language)
+      %td= link_to 'Destroy', desired_language, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Desired language', new_desired_language_path

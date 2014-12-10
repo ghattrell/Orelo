@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b User:
+  = @desired_language.user_id
+%p
+  %b Language:
+  = @desired_language.language_id
+
+= link_to 'Edit', edit_desired_language_path(@desired_language)
+\|
+= link_to 'Back', desired_languages_path
