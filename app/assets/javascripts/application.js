@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require webrtc.io
 //= require script
+//= require users

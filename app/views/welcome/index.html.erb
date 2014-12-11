@@ -13,8 +13,8 @@
 </div>
 <div class="nav-container">
   <ul class="header-nav">
-    <li><a href="#">PROFILE</a></li>
-    <li><a href="#">VIDEO CHAT</a></li>
+    <%if current_user%><li><a href="/users/<%=current_user.id%>">PROFILE</a></li><%end%>
+    <li><a href="/all_users">VIDEO CHAT</a></li>
     <li><a href="#">ABOUT</a></li>
     <li><a href="#">CONTACT</a></li>
   </ul>

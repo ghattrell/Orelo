@@ -1,0 +1,27 @@
+%h1 Listing calls
+
+%table
+  %tr
+    %th User1
+    %th User2
+    %th Room
+    %th Create
+    %th Destroy
+    %th
+    %th
+    %th
+
+  - @calls.each do |call|
+    %tr
+      %td= call.user_id
+      %td= call.user2_id
+      %td= call.room
+      %td= call.create
+      %td= call.destroy
+      %td= link_to 'Show', call
+      %td= link_to 'Edit', edit_call_path(call)
+      %td= link_to 'Destroy', call, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Call', new_call_path

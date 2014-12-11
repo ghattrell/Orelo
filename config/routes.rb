@@ -1,6 +1,9 @@
 Project3::Application.routes.draw do
 
 
+  resources :calls
+
+
   resources :desired_languages
 
 
@@ -17,7 +20,12 @@ Project3::Application.routes.draw do
 
 
 
-  get '/chat', to: 'VideoChats#index' 
+  get '/chat', to: 'VideoChats#index'
+
+  get '/all_users', to: 'Users#index'
+
+  get 'users/:id', to: 'Users#show'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

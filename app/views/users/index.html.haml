@@ -1,0 +1,17 @@
+%h2 Users
+- @users.each do |user|
+  - if current_user
+    - unless user.id == current_user.id
+      %br
+      .person-div
+        .user-pic-div
+          / = image_tag(user.user_image.thumb.url)
+          %p= user.username
+        .extra-div  
+          .middle-div
+            .stats-div
+              %p
+                Age:
+                = user.age
+          .person-buttons-div
+            = link_to "Call", calls_path(:user2_id => user), :method => :post

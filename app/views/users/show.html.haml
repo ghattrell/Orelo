@@ -1,0 +1,12 @@
+%h2 Calls
+%ul
+  - for call in @user.calls
+    %li
+      = h call.user2_id
+%p= link_to "Other_users", root_path
+%h2 Friended by Users
+%ul.received-calls
+  - for user in @user.received_calls
+    %li= h user.firstname
+
+

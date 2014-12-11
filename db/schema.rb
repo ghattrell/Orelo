@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141210154418) do
+ActiveRecord::Schema.define(:version => 20141211120136) do
+
+  create_table "calls", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "user2_id"
+    t.string   "room"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "desired_languages", :force => true do |t|
     t.integer  "user_id"
@@ -23,8 +31,6 @@ ActiveRecord::Schema.define(:version => 20141210154418) do
   create_table "friendships", :force => true do |t|
     t.integer  "user_id"
     t.integer  "friend_id"
-    t.string   "create"
-    t.string   "destroy"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -46,6 +52,13 @@ ActiveRecord::Schema.define(:version => 20141210154418) do
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "username"
+    t.text     "user_image"
+    t.string   "native_language"
+    t.date     "dob"
+    t.string   "gender"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

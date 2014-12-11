@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user1_id: 1
+  user2_id: 1
+  room: MyString
+  create: MyString
+  destroy: MyString
+
+two:
+  user1_id: 1
+  user2_id: 1
+  room: MyString
+  create: MyString
+  destroy: MyString

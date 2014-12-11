@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b User1:
+  = @call.user_id
+%p
+  %b User2:
+  = @call.user2_id
+%p
+  %b Room:
+  = @call.room
+%p
+  %b Create:
+  = @call.create
+%p
+  %b Destroy:
+  = @call.destroy
+
+= link_to 'Edit', edit_call_path(@call)
+\|
+= link_to 'Back', calls_path
