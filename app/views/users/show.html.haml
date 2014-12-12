@@ -1,12 +1,16 @@
-%h2 Calls
-%ul
-  - for call in @user.calls
-    %li
-      = h call.user2_id
-%p= link_to "Other_users", root_path
-%h2 Friended by Users
+/ %h2 Calls
+/ %ul
+/   - for call in @user.calls
+/     %li
+/       = h call.user2_id
+/ %p= link_to "Other_users", root_path
+%h2 Received Calls
 %ul.received-calls
-  - for user in @user.received_calls
-    %li= h user.firstname
+  - @user.received_calls.each do |received_call|
+    -users_id = received_call.user_id
+    %br
+    =User.find(users_id).firstname
+    %input#since{:name => "since", :type => "hidden", :value => Time.now()}/ 
+
 
 

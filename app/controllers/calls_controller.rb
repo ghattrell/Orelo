@@ -1,8 +1,7 @@
 class CallsController < ApplicationController
   before_filter :set_call, only: [:show, :edit, :update, :destroy]
   def index
-    # @calls = current_user.received_calls
-    @calls = Call.all
+   @calls = current_user.received_calls.where("created_at > :since", {since: Time.parse(params[:since]) + 1.second })
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @calls.to_json(:include => :user )}
